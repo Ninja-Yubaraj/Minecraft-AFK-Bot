@@ -8,6 +8,18 @@ A simple Node.js bot that automates “away from keyboard” (AFK) activity in M
 * Configurable delay/timer settings.
 * Lightweight and easy to run in the background.
 
+## 🐳 Deploy Now with Docker!
+
+```bash
+docker run -d \
+  -e SERVER_HOST="example.com" \
+  -e SERVER_PORT="25565" \
+  -e BOT_USERNAME="AFKBot" \
+  -e BOT_CHUNK="2" \
+  -e MC_VERSION="false" \
+  ninjayubaraj/minecraft-afk-bot:latest
+```
+
 ## 🧰 Getting Started
 
 ### Prerequisites

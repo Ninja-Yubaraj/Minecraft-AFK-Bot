@@ -11,5 +11,6 @@ services:
       SERVER_HOST: "example.domain.com"   # change this
       SERVER_PORT: "25565"
       BOT_USERNAME: "AFKBot"              # or omit for default
-      BOT_CHUNK: "1"
+      BOT_CHUNK: "2"
+      MC_VERSION: "false"
     restart: unless-stopped

@@ -6,7 +6,8 @@ cat <<EOF > /app/config.json
   "serverHost": "${SERVER_HOST}",
   "serverPort": ${SERVER_PORT:-25565},
   "botUsername": "${BOT_USERNAME:-AFKBot}",
-  "botChunk": ${BOT_CHUNK:-1}
+  "botChunk": ${BOT_CHUNK:-2},
+  "mcVersion": ${MC_VERSION:-false}
 }
 EOF
 
