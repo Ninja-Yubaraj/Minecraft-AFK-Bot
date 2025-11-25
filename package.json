@@ -4,7 +4,8 @@
   "description": "An AFK Minecraft bot that moves on-site to keep Servers and farms active 24/7.",
   "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
