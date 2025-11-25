@@ -1,6 +1,7 @@
 {
-  "serverHost": "example.domain.com",
+  "serverHost": "example.com",
   "serverPort": 25565,
   "botUsername": "AFKBot",
-  "botChunk": 1
+  "botChunk": 2,
+  "mcVersion": false
 }
