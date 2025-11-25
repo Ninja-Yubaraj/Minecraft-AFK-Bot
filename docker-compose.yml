@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   minecraft-afk-bot:
-    image: minecraft-afk-bot:latest
+    image: ninjayubaraj/minecraft-afk-bot:latest
     container_name: minecraft-afk-bot
     build:
       context: .
