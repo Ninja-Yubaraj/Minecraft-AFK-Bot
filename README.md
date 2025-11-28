@@ -40,9 +40,9 @@ docker run -d \
    ```bash
    npm install  
    ```
-3. Configure the bot:
+3. Setup the `.env`:
 
-   * Open `config.json` and fill in your server address, port, username, password (if needed), delay settings, etc.
+   * Create a `.env` file and fill in your server address, port, etc.
 
 4. Run the bot:
 
