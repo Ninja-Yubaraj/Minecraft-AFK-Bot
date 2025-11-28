@@ -1,18 +1,20 @@
+# Use a lightweight Node.js image
 FROM node:18-alpine
 
-# Create app directory
+# Set working directory
 WORKDIR /app
 
-# Copy package files and install dependencies
+# Copy only package metadata first for caching
 COPY package.json package-lock.json* ./
-RUN npm install
 
-# Copy rest of the bot code
+# Install only production dependencies
+RUN npm install --omit=dev
+
+# Copy the rest of the source code
 COPY . .
 
-# Add entrypoint script
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+# Disable dotenv usage inside Docker
+ENV NODE_ENV=production
 
-# Start the bot
-ENTRYPOINT ["/entrypoint.sh"]
+# Run the bot
+CMD ["npm", "start"]

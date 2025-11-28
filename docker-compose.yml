@@ -8,9 +8,10 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      SERVER_HOST: "example.domain.com"   # change this
-      SERVER_PORT: "25565"
-      BOT_USERNAME: "AFKBot"              # or omit for default
+      SERVER_HOST: "example.domain.com" # change this
+      SERVER_PORT: "25565" # and this
+      BOT_USERNAME: "AFKBot" # Default
       BOT_CHUNK: "2"
       MC_VERSION: "false"
+      NODE_ENV: production
     restart: unless-stopped
