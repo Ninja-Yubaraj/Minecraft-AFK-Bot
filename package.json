@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/Ninja-Yubaraj/Minecraft-AFK-Bot#readme",
   "dependencies": {
-    "mineflayer": "^4.33.0"
+    "mineflayer": "^4.35.0"
   },
   "devDependencies": {
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.3.1"
   }
 }
